@@ -1,0 +1,16 @@
+{
+  "name": "wingman",
+  "version": "1.0.0",
+  "description": "general reminder app,helps in adding items",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Varun-THE GRAVE DIGGER",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4"
+  }
+}
