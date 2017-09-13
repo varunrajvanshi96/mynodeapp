@@ -8,17 +8,20 @@ module.exports=function(app){
 
   app.get('/todo',function(req,res)
   {
+ 	console.log("Inside get");
     res.render('todo',{todos:data});
   });
 
   app.post('/todo',urlencodedParser,function(req,res){
-data.push(req.body);
-res.json(data);
+	console.log("inside post adding ");
+	data.push(req.body);
+	res.json(data);
   });
 
   app.delete('/todo/:item',function(req,res){
-    data=data.filter(function(todo){
-      return todo.item.replace(/ /g,'-') !== req.params.items;
+    data=data.filter(function(data){
+	console.log("inside delete");
+      return data.item.replace(/ /g,'-') !== req.params.items;
   });
   });
 
